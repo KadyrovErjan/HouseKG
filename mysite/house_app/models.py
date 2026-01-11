@@ -85,3 +85,7 @@ class House(models.Model):
     OverallQual = models.IntegerField()
     Neighborhood = models.CharField(max_length=50)
     predicted_price = models.FloatField(null=True, blank=True)
+
+
+    def __str__(self):
+        return self.Neighborhood
